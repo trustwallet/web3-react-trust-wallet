@@ -1,0 +1,33 @@
+{
+  "name": "@trustwallet/web3-react-trust-wallet",
+  "keywords": [
+    "web3-react",
+    "trust-wallet",
+    "TrustWallet"
+  ],
+  "author": "Albert Cieplinski",
+  "license": "GPL-3.0-or-later",
+  "repository": "github:trustwallet/web3-react-trust-wallet",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.0.3",
+  "files": [
+    "dist/*"
+  ],
+  "type": "commonjs",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "start": "tsc --watch"
+  },
+  "dependencies": {
+    "@web3-react/types": "^8.0.20-beta.0"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1"
+  }
+}
