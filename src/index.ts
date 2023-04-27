@@ -25,7 +25,7 @@ export class TrustWallet extends Connector {
   provider?: TrustWalletProvider
 
   private get connected() {
-    return !!this.provider?.isConnected()
+    return !!this.provider?.isConnected?.()
   }
 
   constructor({ actions, onError }: TrustWalletConstructorArgs) {
