@@ -33,6 +33,8 @@ export class TrustWallet extends Connector {
   }
 
   public activate(desiredChainIdOrChainParameters?: number | AddEthereumChainParameter): Promise<void> | undefined {
+    this.detectProvider();
+
     if (!this.provider) {
       window.open('https://trustwallet.com/browser-extension/', '_blank')
       return
